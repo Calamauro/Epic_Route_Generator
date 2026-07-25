@@ -9,7 +9,7 @@ Inoltre, include un secondo script per esportare la mappa in un'immagine PNG in 
 
 ## 🛠️ Guida alla Personalizzazione (Crea il TUO viaggio!)
 
-Lo script principale (`creazione_mappa.py`) è stato scritto per essere facilmente modificato anche da chi non ha grande esperienza con Python. Segui questi step per adattarlo al tuo itinerario.
+Lo script principale , cella n.1 del file (`Epic_Route_Generator.ipynb`) è stato scritto per essere facilmente modificato anche da chi non ha grande esperienza con Python. Segui questi step per adattarlo al tuo itinerario (eventualmente consiglio l'utilizzo di Google Colab per il lancio del codice Python).
 
 ### 1. Cambiare le Tappe Principali
 Cerca la variabile `tappe = [...]` all'inizio del codice. Qui è dove inserisci i tuoi stop. 
@@ -43,3 +43,17 @@ Se il tuo itinerario si svolge altrove, ti consigliamo di rimuovere la minimappa
    ```python
    minimap = MiniMap(tile_layer='CartoDB Positron', position='bottomright', width=160, height=160, zoom_level_offset=-5)
    mappa_tour.add_child(minimap)
+
+
+## 📸 Esportare la mappa in Alta Risoluzione (Script 2)
+Il file generato dalla prima cella dello script è un .html navigabile. Se vuoi trasformarlo in una bellissima immagine statica (PNG) in 4K da stampare o inserire in un PDF, utilizza il secondo script (generazione_screenshot.py).
+
+Lo script presente nella cella n. 3 del file (`Epic_Route_Generator.ipynb`) è ottimizzato per Google Colab:
+
+Installa in background un browser Chrome "Headless" (invisibile).
+
+Usa Selenium per aprire la mappa.
+
+Applica un trucco magico: --force-device-scale-factor=3, che inganna il browser facendogli credere di essere uno schermo Retina, moltiplicando i pixel x3 per una nitidezza assoluta.
+
+Salva e scarica automaticamente l'immagine.
