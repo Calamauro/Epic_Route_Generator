@@ -1,4 +1,4 @@
-# 🌍 [Epic Route Generator]
+# 🌍 Epic Route Generator
 
 Un progetto in Python per generare mappe di viaggio interattive ad altissima resa grafica, ispirate allo stile dei classici atlanti geografici (National Geographic). 
 
