@@ -46,7 +46,7 @@ Se il tuo itinerario si svolge altrove, ti consigliamo di rimuovere la minimappa
 
 
 ## 📸 Esportare la mappa in Alta Risoluzione (Script 2)
-Il file generato dalla prima cella dello script è un .html navigabile. Se vuoi trasformarlo in una bellissima immagine statica (PNG) in 4K da stampare, postare su Instagram o inserire in un PDF, utilizza il secondo script (generazione_screenshot.py).
+Il file generato dalla prima cella dello script è un .html navigabile. Se vuoi trasformarlo in una bellissima immagine statica (PNG) in 4K da stampare, postare su Instagram o inserire in un PDF, utilizza il secondo script (presente nella cella n. 2).
 
 Lo script presente nella cella n. 2 del file (`Epic_Route_Generator.ipynb`) è ottimizzato per Google Colab:
 
